@@ -1,0 +1,10 @@
+---
+key: "ResearchGroup-vision-1.0.0"
+name : "ResearchGroup-vision"
+displayName : "ResearchGroup-vision"
+description: "ResearchGroup-vision"
+version: "1.0.0"
+serviceUrl: "https://{MI_HOST}:{MI_PORT}research-groups/v1/vision"
+definitionType: "OAS3"
+securityType: "BASIC"
+mutualSSLEnabled: false
