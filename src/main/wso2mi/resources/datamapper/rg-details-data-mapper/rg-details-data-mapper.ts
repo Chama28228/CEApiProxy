@@ -46,6 +46,18 @@ taxonomy: string
  * inputVariable : inputroot
 */
 export function mapFunction(input: Root): OutputRoot {
-	return {}
+    return {
+    	status: input.status,
+    	data: {
+    		code: input.data.code,
+    		name: input.data.name,
+    		description: input.data.metadata.description,
+    		primary_contact_person: input.data.metadata.primary_contact_person,
+    		maintainer: input.data.metadata.maintainer,
+    		page: input.data.metadata.page,
+    		website: input.data.metadata.website,
+    	},
+    	taxonomy: input.data.taxonomy,
+    };
 }
 

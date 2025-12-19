@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-    <api context="research-groups/v1/vision" name="ResearchGroup-vision" xmlns="http://ws.apache.org/ns/synapse">
+    <api name="ResearchGroup-vision" context="/research-groups/v1/vision" xmlns="http://ws.apache.org/ns/synapse">
         <resource methods="GET" uri-template="/">
             <inSequence>
             <call >
     <endpoint key="research-group-computer-vision" />
   
-</call><datamapper config="resources:datamapper/rg-details-data-mapper/rg-details-data-mapper.dmc" inputSchema="resources:datamapper/rg-details-data-mapper/rg-details-data-mapper_inputSchema.json" outputSchema="resources:datamapper/rg-details-data-mapper/rg-details-data-mapper_outputSchema.json" /></inSequence>
+</call><datamapper config="resources:datamapper/rg-details-data-mapper/rg-details-data-mapper.dmc" inputSchema="resources:datamapper/rg-details-data-mapper/rg-details-data-mapper_inputSchema.json" outputSchema="resources:datamapper/rg-details-data-mapper/rg-details-data-mapper_outputSchema.json" /><respond /></inSequence>
             <faultSequence>
             </faultSequence>
         </resource>
